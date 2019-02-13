@@ -1,0 +1,26 @@
+{% set build = 0 %}
+{% set version = "0.7.0" %}
+{% set git_rev = "77fb7fa" %}
+
+package:
+    name: sc-im
+    version: {{version}}
+
+about:
+    home: https://github.com/andmarti1424/sc-im.git
+    license: BSD
+    summary: Spreadsheet Calculator Improvised
+
+source:
+    git_url: https://github.com/andmarti1424/sc-im.git
+    git_rev: {{git_rev}}
+
+requirements:
+    build:
+        - ncurses
+    run:
+        - ncurses
+
+build:
+    number: {{build}}
+    string: h{{git_rev}}_{{build}}
