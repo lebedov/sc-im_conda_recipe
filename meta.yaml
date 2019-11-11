@@ -1,6 +1,6 @@
 {% set build = 0 %}
 {% set version = "0.7.0" %}
-{% set git_rev = "77fb7fa" %}
+{% set git_rev = "8b93daf" %}
 
 package:
     name: sc-im
